@@ -22,3 +22,5 @@ export const quizApi = createApi({
           })
      }),
 });
+
+export const { useAddQuizMutation, useGetAllQuizQuery } = quizApi;
