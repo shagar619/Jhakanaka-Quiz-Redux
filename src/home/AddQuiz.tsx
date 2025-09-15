@@ -12,8 +12,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useAddQuizMutation } from "@/redux/api/quizApi";
 import { useState } from "react";
-import { toast } from "sonner";
-import { toast as hotToast } from "react-hot-toast"
 
 type QuizData = {
      title: string;
@@ -89,9 +87,9 @@ export default function AddQuiz() {
      const handleSubmit = async () => {
           const res = await addQuiz(quizData);
           if (res.error) {
-               hotToast.error("Failed to add quiz");
+               alert("Failed to add quiz");
           } else {
-               toast("Quiz added successfully");
+               alert("Quiz added successfully");
           }
      };
 
