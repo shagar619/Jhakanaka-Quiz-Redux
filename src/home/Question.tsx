@@ -36,7 +36,7 @@ return (
 
      <CardContent>
           <div>
-               {currentQuestion.options.map((option, index) => (
+               {currentQuestion?.options.map((option, index) => (
           <Button
                variant={option === currentAnswer ? "default" : "outline"}
                onClick={() => handleAnswerChange(option)}

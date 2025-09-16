@@ -94,10 +94,10 @@ export default function AddQuiz() {
      };
 
 return (
-<div className="my-6">
+<div className="my-">
      <Dialog>
      <DialogTrigger asChild>
-          <Button variant="destructive">Add Quiz</Button>
+          <Button className="bg-green-600 hover:bg-slate-500" variant="destructive">Add Quiz</Button>
      </DialogTrigger>
      <DialogContent className="sm:max-w-[600px]">
           <DialogHeader>

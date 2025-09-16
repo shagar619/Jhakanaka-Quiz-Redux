@@ -14,8 +14,13 @@ function App() {
     <>
       <h1 className='text-center text-5xl font-bold text-gray-800 my-12'>Quiz App</h1>
 
-      <AddQuiz></AddQuiz>
-      <AllQuiz></AllQuiz>
+      <div className='flex justify-end mb-12 mr-24'>
+        <AddQuiz></AddQuiz>
+      </div>
+
+      <div className='mx-24 my-12'>
+        <AllQuiz></AllQuiz>
+      </div>
 
       { !quizComplete ? <Question></Question> : <QuizSummary></QuizSummary> }
 
