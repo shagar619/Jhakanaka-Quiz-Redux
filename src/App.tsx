@@ -1,5 +1,6 @@
 
 import './App.css'
+import { ModeToggle } from './components/ui/toggleButton/mode-toggle';
 import AddQuiz from './home/AddQuiz';
 import AllQuiz from './home/AllQuiz';
 import Question from './home/Question';
@@ -14,8 +15,9 @@ function App() {
     <>
       <h1 className='text-center text-5xl font-bold text-green-800 my-12 uppercase'>Quiz App</h1>
 
-      <div className='flex justify-end mb-12 mr-24'>
+      <div className='flex justify-end gap-3 mb-12 mr-24'>
         <AddQuiz></AddQuiz>
+        <ModeToggle></ModeToggle>
       </div>
 
       <div className='mx-24 my-12'>
