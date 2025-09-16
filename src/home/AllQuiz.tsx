@@ -29,11 +29,11 @@ const AllQuiz = () => {
           return (
           <Card
                key={quiz._id}
-               className="cursor-pointer"
+               className="cursor-pointer shadow hover:shadow-lg border p-4"
                onClick={() => handleSetQuiz(quiz)}
           >
-               <h3>{quiz.title}</h3>
-               <p>{quiz.description}</p>
+               <h3 className="text-xl text-center font-semibold">{quiz.title}</h3>
+               <p className="text-base text-center text-gray-700">{quiz.description}</p>
           </Card>
           );
      })}

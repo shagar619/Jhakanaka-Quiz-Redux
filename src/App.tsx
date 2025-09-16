@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <h1 className='text-center text-5xl font-bold text-gray-800 my-12'>Quiz App</h1>
+      <h1 className='text-center text-5xl font-bold text-green-800 my-12 uppercase'>Quiz App</h1>
 
       <div className='flex justify-end mb-12 mr-24'>
         <AddQuiz></AddQuiz>
