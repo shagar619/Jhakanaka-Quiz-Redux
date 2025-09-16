@@ -25,10 +25,13 @@ const Question = () => {
 
 
 return (
-     <div className="flex justify-center">
+
+     <div className="mb-24">
+
+     <div className="flex justify-center"> 
 
      { quizQ.length ?  (
-     <Card className="w-[450px] ">
+     <Card className="w-[450px] shadow hover:shadow-lg border">
      <CardHeader>
           <CardTitle>{currentQuestion.question}</CardTitle>
           {/* <CardDescription>{}</CardDescription> */}
@@ -47,10 +50,14 @@ return (
           </Button>
           ))}
           </div>
+
           <QuizControls></QuizControls>
+
      </CardContent>
      </Card>
      ) : (<div>No Quiz Selected</div>) }
+     </div>
+
      </div>
 );
 };

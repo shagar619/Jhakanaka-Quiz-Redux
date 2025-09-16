@@ -34,6 +34,9 @@ export default function QuizControls() {
 
 
 return (
+
+     <div>
+
      <div className="flex justify-between mt-4 space-x-4">
           {/* previous button */}
           <Button
@@ -64,6 +67,7 @@ return (
           >Complete Quiz</Button>
 
 
+     </div>
      </div>
 );
 }
