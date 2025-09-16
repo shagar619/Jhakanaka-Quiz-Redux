@@ -26,6 +26,8 @@ const Question = () => {
 
 return (
      <div className="flex justify-center">
+
+     { quizQ.length ?  (
      <Card className="w-[450px] ">
      <CardHeader>
           <CardTitle>{currentQuestion.question}</CardTitle>
@@ -48,6 +50,7 @@ return (
           <QuizControls></QuizControls>
      </CardContent>
      </Card>
+     ) : (<div>No Quiz Selected</div>) }
      </div>
 );
 };
