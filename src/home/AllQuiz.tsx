@@ -24,7 +24,7 @@ const AllQuiz = () => {
      }
 
      return (
-     <section className="grid grid-cols-6 gap-4">
+     <section className="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {quizzes.map((quiz) => {
           return (
           <Card

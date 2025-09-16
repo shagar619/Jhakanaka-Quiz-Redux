@@ -103,9 +103,9 @@ return (
           <DialogHeader>
           <DialogTitle>Create New Quiz</DialogTitle>
           <DialogDescription>
-               {step === 1 && "Step 1: Enter Quiz Details"}
-               {step === 2 && "Step 2: Add Questions"}
-               {step === 3 && "Step 3: Submit"}
+               {step === 1 && "Step 1 : Enter Quiz Details"}
+               {step === 2 && "Step 2 : Add Questions"}
+               {step === 3 && "Step 3 : Submit"}
           </DialogDescription>
           </DialogHeader>
 
@@ -113,7 +113,7 @@ return (
           <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
                <Label htmlFor="title" className="text-right">
-                    Title
+                    Title :
                </Label>
                <Input
                     id="title"
@@ -124,7 +124,7 @@ return (
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
                <Label htmlFor="description" className="text-right">
-                    Description
+                    Description :
                </Label>
                <Input
                     id="description"
@@ -156,7 +156,7 @@ return (
                onClick={() => setOpenAddQuestionModal(true)}
                className="mt-4 w-full"
           >
-               Add Another Question
+               Add Questions
           </Button>
           </div>
           )}
@@ -230,7 +230,7 @@ return (
           </Button>
           )}
           {addQuestionStep < 3 ? (
-          <Button onClick={() => setAddQuestionStep((s) => s + 1)}>
+          <Button className="" onClick={() => setAddQuestionStep((s) => s + 1)}>
                Next
           </Button>
           ) : (
