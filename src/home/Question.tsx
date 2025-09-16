@@ -55,7 +55,7 @@ return (
 
      </CardContent>
      </Card>
-     ) : (<div>No Quiz Selected</div>) }
+     ) : (<div className="text-2xl font-bold text-orange-400">No Quiz Selected!</div>) }
      </div>
 
      </div>
